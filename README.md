@@ -8,6 +8,8 @@ $ pip install -U getproxy
 运行py脚本 
 $ python /usr/bin/get_proxies_to_redis.py
 
+
+```python
 # -*- coding:utf-8 -*-
 # get_proxies_to_redis.py
 
@@ -32,4 +34,6 @@ if g.valid_proxies:
 			proxy_url = ''.join([i['type'], '://', i['host'], ':', str(i['port'])])
 			rds.sadd('ips', proxy_url)
 			print 'saved:',proxy_url
-参考：https://github.com/fate0/getproxy
+			
+```
+参考：https://github.com/fate0/getpro
