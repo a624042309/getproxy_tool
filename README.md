@@ -25,7 +25,7 @@ g.validate_web_proxies()
 
 if g.valid_proxies:
 
-	rds = redis.Redis('10.180.55.40', port=6379, password='demo')
+	rds = redis.Redis(host='', port=6379, password='demo')
 	# 删除key->更新全部代理地址
 	rds.delete('ips')
 
